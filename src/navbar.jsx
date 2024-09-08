@@ -1,7 +1,7 @@
 import './navbar.css';
 
 function NavBar() {
-  return (
+  return (  
     <div className="navbar-container">
         <ul>
             <a>David Kopnicky</a>
