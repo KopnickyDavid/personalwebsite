@@ -1,0 +1,32 @@
+.navbar-container {
+    margin-top: 3rem;
+    color: white;
+    font-size: 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+  
+  .inside-navbar {
+   margin-left: 60rem; 
+  }
+  
+  li {
+    font-size: 20px;
+    display: inline;
+    margin: 0 2rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15rem;
+  }
+  

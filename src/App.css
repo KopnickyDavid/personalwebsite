@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.mainpage {
   color: white;
+  position: relative;
+  top: 18rem;
+  width: 35rem;
+  height: 15rem;
+  left: 20rem;
+  overflow: hidden;
+}
+.title {
+  font-size: 4rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  width: 0; /* Start with no width for typing effect */
+  animation: 
+    typing 2.5s steps(60, end) forwards, /* Keeps the final state */
+    blink-caret .55s step-end infinite;
 }
 
-.App-link {
-  color: #61dafb;
+.undertitle {
+  font-size: 1.5rem;
+  color: rgb(179, 179, 179);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; } 
 }
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
