@@ -5,7 +5,9 @@ import projectlist from './projects.json';
 function App() {
   const list = projectlist.map((data, index) => (
     <div className='project' key={index}>
-    <span className='project-title'> {data.title} </span> 
+    <span className='project-title'> 
+      {data.title} 
+    </span> 
     </div>
   ));
 
