@@ -10,7 +10,7 @@ function App() {
     </span> 
     </div>
   ));
-
+ 
   return (
     <div className="App">
       <div className='mainpage'>
