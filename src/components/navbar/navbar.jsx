@@ -9,6 +9,7 @@ function NavBar() {
             <li>Blog</li>
             <li>Github</li>
             <li>About</li>
+            <li><a href='/login'>ME</a></li>
             </div>
         </ul>
     </div>

@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
-import projectlist from './projects.json';
-import me from './pictureme.jpg';
+import projectlist from '../../data/projects.json';
+import me from '../../pictures/me.jpg';
+
 function App() {
+
+
   const list = projectlist.map((data, index) => (
     <div className='project' key={index}>
     <span className='project-title'> 
