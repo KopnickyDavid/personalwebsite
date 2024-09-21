@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminPanel from './pages/adminpanel/panel';
 import NavBar from './components/navbar/navbar';
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAnalytics ,logEvent } from "firebase/analytics";
 import Footer from './components/footer/footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,6 +21,7 @@ const firebaseConfig = {
  }
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+logEvent(analytics, 'notification_received');
 root.render(
   <React.StrictMode>
     <NavBar />
