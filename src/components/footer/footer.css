@@ -17,8 +17,8 @@ footer {
 }
 .react-icons,.footer-bottom {
     background-color: transparent;
-    margin-left: -20rem;
-    scale: 1.1;
+    margin-left: -10rem;
+    scale: 1.5;
 }
 
 .footer ul {
@@ -28,6 +28,7 @@ footer {
 }
 .socials {
     margin-right: 0.5rem;
+    display: flex;
 }
 .footer-content p {
     background-color: transparent;
@@ -35,5 +36,12 @@ footer {
     font-size: 1.2rem;
 }
 .socials li {
-    min-width: 7rem;
+    min-width: 15rem;
+    width: 15rem;
+    
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15rem;
 }
