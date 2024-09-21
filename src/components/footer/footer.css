@@ -1,0 +1,39 @@
+.footer-content {
+    background-color: rgb(24, 24, 24);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    color: white;
+    height: 15vh;
+    text-align: center;
+}
+footer {
+    width: 100%;
+    margin: 0 0 0 0 ;
+}
+.footer-content li,a,ul {
+    color: white;
+    background-color: transparent;
+}
+.react-icons,.footer-bottom {
+    background-color: transparent;
+    margin-left: -20rem;
+    scale: 1.1;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.socials {
+    margin-right: 0.5rem;
+}
+.footer-content p {
+    background-color: transparent;
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+}
+.socials li {
+    min-width: 7rem;
+}

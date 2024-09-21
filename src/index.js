@@ -7,7 +7,7 @@ import AdminPanel from './pages/adminpanel/panel';
 import NavBar from './components/navbar/navbar';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-
+import Footer from './components/footer/footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const firebaseConfig = {
@@ -30,6 +30,7 @@ root.render(
         <Route path="/login" element={<AdminPanel />} />
       </Routes>
     </BrowserRouter>
+    <Footer />
   </React.StrictMode>
 );
 

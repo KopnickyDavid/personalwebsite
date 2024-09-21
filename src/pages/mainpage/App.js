@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import projectlist from '../../data/projects.json';
 import me from '../../pictures/me.jpg';
-
+import { IconContext } from "react-icons";
+import { FaGithub } from 'react-icons/fa';
+import main from '../../pictures/main.png';
 function App() {
 
 
@@ -16,10 +18,16 @@ function App() {
  
   return (
     <div className="App">
+          <style jsx global>{`body { margin: 0px;padding: 0px;}`}</style>
       <div className='mainpage'>
         <div className='title'>Hello, I'm David</div>
         <div className='undertitle'>I'm a Student With a Passion for Programming</div>
-        <button onClick={() => window.open('https://github.com/KopnickyDavid', '_blank')}>GitHub</button>
+        <IconContext.Provider value={{ color: "white", className: "react-icons1" }}> 
+          <button onClick={() => window.open('https://github.com/KopnickyDavid', '_blank')}> <FaGithub/> GitHub</button>
+      </IconContext.Provider>
+      </div>
+      <div className='picture'>
+      <img src={main}></img>
       </div>
       <div className='about'>
         <h1>About me</h1>
@@ -34,8 +42,6 @@ function App() {
         <div className='project-container'>
           {list} 
         </div>
-      </div>
-      <div className='footer'>
       </div>
     </div>
   );
