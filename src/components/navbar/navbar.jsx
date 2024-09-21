@@ -4,11 +4,11 @@ function NavBar() {
   return (  
     <div className="navbar-container">
         <ul>
-            <a>David Kopnicky</a>
+            <div className="nav-name">David Kopnicky</div>
             <div className='inside-navbar'>
-            <li>Blog</li>
-            <li>Github</li>
-            <li>About</li>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#aboutme"><li>About</li></a>
+            <a href=""><li>Blog</li></a>
             </div>
         </ul>
     </div>

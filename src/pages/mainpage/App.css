@@ -56,6 +56,7 @@
   margin-top: 1rem;
   border-radius: 5px;
   color: white;
+  margin-right: -1rem;
 }
 .react-icons1 {
   background-color: transparent;
@@ -63,7 +64,7 @@
 .mainpage button:hover {
 transform: translateY(-5px);
 cursor: pointer;
-background-color: #2b3137	;
+background-color: rgb(43, 43, 43)	;
 }
 .projects {
 max-width: fit-content;

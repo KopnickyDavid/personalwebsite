@@ -29,7 +29,7 @@ function App() {
       <div className='picture'>
       <img src={main}></img>
       </div>
-      <div className='about'>
+      <div className='about' id='aboutme'>
         <h1>About me</h1>
         <p><img src={me}></img>
         I’m a high school student with a strong passion for programming that has been with me since a young age. Over the years, I’ve developed a keen interest in building digital solutions, focusing specifically on front-end development. My primary goal is to create engaging, user-friendly interfaces that make an impact. I also work with Python, which has helped me broaden my understanding of programming concepts and problem-solving techniques.
@@ -37,7 +37,7 @@ function App() {
         Outside of coding, I’m always looking for ways to stay active, whether it’s through sports or other physical activities. I believe that balancing both mental and physical challenges is important for growth and helps keep me motivated and focused. Programming isn’t just a hobby for me; it’s a way to constantly evolve and learn, and I’m always looking for opportunities to improve my skills and contribute to meaningful projects.</p>
 
       </div>
-      <div className='projects'>
+      <div className='projects' id='projects'>
         <h1>My Projects</h1>
         <div className='project-container'>
           {list} 

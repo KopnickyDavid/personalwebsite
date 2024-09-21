@@ -18,16 +18,23 @@
   }
   
   .inside-navbar {
-   margin-left: 40rem; 
+   margin-left: 60rem; 
   }
   
-  li {
-    font-size: 20px;
+  .inside-navbar li {
+    font-size: 1.5rem;
     display: inline;
     margin: 0 2rem;
   }
-  
-  a {
+  .inside-navbar li:hover {
+    color: #a3a3a3;
+    cursor: pointer;
+  }
+  .inside-navbar a  {
+    text-decoration: none;
+
+  }
+.nav-name {
     text-decoration: none;
     color: white;
     margin-left: 15rem;
