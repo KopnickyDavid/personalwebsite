@@ -5,6 +5,8 @@ import me from '../../pictures/me.jpg';
 import { IconContext } from "react-icons";
 import { FaGithub } from 'react-icons/fa';
 import main from '../../pictures/main.png';
+import Skills from '../../components/skills/skills.jsx';
+
 function App() {
 
 
@@ -37,6 +39,7 @@ function App() {
         Outside of coding, I’m always looking for ways to stay active, whether it’s through sports or other physical activities. I believe that balancing both mental and physical challenges is important for growth and helps keep me motivated and focused. Programming isn’t just a hobby for me; it’s a way to constantly evolve and learn, and I’m always looking for opportunities to improve my skills and contribute to meaningful projects.</p>
 
       </div>
+      <Skills/>  
       <div className='projects' id='projects'>
         <h1>My Projects</h1>
         <div className='project-container'>
