@@ -12,6 +12,8 @@
     width: 70vw;
     overflow-y: auto;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .article {
     margin-left: auto;
@@ -24,6 +26,19 @@
     text-align: center;
     overflow: hidden;
     margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.article-title {
+    background-color: transparent;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+.article-content {
+    background-color: transparent;
+    font-size: 1rem;
+    color: rgb(175, 174, 174);
+    text-decoration: none;
 }
 ::-webkit-scrollbar {
     width: 10px;

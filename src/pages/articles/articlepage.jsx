@@ -1,11 +1,13 @@
 import {React,useEffect,useState} from "react";
-import InitiatFirebase1 from  '../../components/firebase/firebase.jsx';
+import {getArticles} from  '../../components/firebase/firebase.jsx';
 import './articlepage.css';
+import {  Link } from "react-router-dom";
+
 function ArticlesPage () {
     const [articleData, setArticleData] = useState([]); 
     useEffect(() => {
         async function fetchArticles() {
-          const dataa = await InitiatFirebase1();
+          const dataa = await getArticles();
           setArticleData(dataa); 
         }
     
@@ -18,14 +20,16 @@ function ArticlesPage () {
             <h1>Articles</h1>
             <div className="articles">
             {articleData.map((data, index) => (
+                <Link to={"/articles/"+index}>
                 <div className='article' key={index}>
-                    <span className='article-title'> 
+                    <h2 className='article-title'> 
                         {data.Title} 
-                    </span> 
-                    <span className='article-content'>
+                    </h2>
+                    <p className='article-content'>
                         {data.Description}
-                    </span>
+                    </p>
                 </div>
+                </Link>
             ))}
             </div>
 
