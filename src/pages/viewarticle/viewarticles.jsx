@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getArticleById } from '../../components/firebase/firebase.jsx';
-
+import './viewarticle.css';
 function ViewArticle(props) {
     const [article, setArticle] = useState(null);
     const url = window.location.href;
@@ -19,7 +19,11 @@ function ViewArticle(props) {
 
     return (
         <div className="articles-container">
-            <h1>{article ? article.Title : "Loading..."}</h1>
+            <div className="articles-content">
+                <h1>{article ? article.Title : "Loading..."}</h1>
+                <p>{article ? article.Text : "Loading..."}</p>
+            </div>
+            <br></br>
         </div>
     );
 }

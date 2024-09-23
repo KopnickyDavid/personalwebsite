@@ -1,0 +1,21 @@
+.articles-container {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.articles-content{
+    border: 2px solid rgb(43, 43, 43);
+    width: 70vw;
+    margin-top: 5rem;
+    overflow-x: hidden;
+}
+.articles-content h1{
+    font-size: 4rem;
+}
+.articles-content p{
+    font-size: 2.5rem;
+    color: rgb(175, 174, 174);
+}
