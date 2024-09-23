@@ -8,7 +8,7 @@ function NavBar() {
             <div className='inside-navbar'>
             <a href="#projects"><li>Projects</li></a>
             <a href="#aboutme"><li>About</li></a>
-            <a href=""><li>Blog</li></a>
+            <a href="#blog"><li>Blog</li></a>
             </div>
         </ul>
     </div>

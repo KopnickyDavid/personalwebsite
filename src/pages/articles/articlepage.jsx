@@ -14,8 +14,9 @@ function ArticlesPage () {
     
       
     return (
-        <div className="article-container">
+        <div className="article-container" id="blog">
             <h1>Articles</h1>
+            <div className="articles">
             {articleData.map((data, index) => (
                 <div className='article' key={index}>
                     <span className='article-title'> 
@@ -26,6 +27,7 @@ function ArticlesPage () {
                     </span>
                 </div>
             ))}
+            </div>
 
         </div>
     );

@@ -1,4 +1,4 @@
-import {React,useEffect} from 'react';
+import {React} from 'react';
 import './App.css';
 import projectlist from '../../data/projects.json';
 import me from '../../pictures/me.jpg';
