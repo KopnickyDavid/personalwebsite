@@ -48,3 +48,19 @@
     color: rgb(175, 174, 174);
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+.skill {
+    width: 25vw;
+}
+.skill img {
+    height: 10%;
+
+}
+.skill h2 {
+    font-size: 1.5rem;
+}
+.skill p {
+    font-size: 0.7rem;
+}
+    
+  }

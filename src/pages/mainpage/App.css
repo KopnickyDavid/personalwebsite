@@ -1,14 +1,14 @@
 .mainpage {
   color: white;
   position: relative;
-  top: 18rem;
+  top: 30vh;
   width: 35rem;
   height: 15rem;
   left: 20rem;
   overflow: hidden;
 }
 .title {
-  font-size: 4rem;
+  font-size: 6vh;
   overflow: hidden; 
   border-right: .10em solid orange; 
   white-space: nowrap; 
@@ -75,7 +75,7 @@ overflow: hidden;
 }
 .project-container {
 width: 70vw;
-height: 35vh;
+height: 45vh;
 display: flex;
 flex-wrap: wrap;
 
@@ -123,4 +123,27 @@ background-color: rgb(43, 43, 43);
   top: -10rem;
   left: 50rem;
   scale: 0.9;
+}
+@media screen and (max-width: 600px) {
+  .mainpage {
+    left: 5vh;
+    height: 25vh;
+    width: 80vw;
+    top: 15vh;
+  }
+  .title {
+    font-size: 4vh;
+  }
+  .undertitle {
+    font-size: 1rem;
+  }
+  .mainapage button {
+    height: 2rem;
+    width: 6rem;
+    font-size: 1rem;
+  }
+  .about {
+    margin-top: 15vh;
+  }
+  
 }

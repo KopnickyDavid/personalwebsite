@@ -58,3 +58,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(43, 43, 43); 
   }
+  @media screen and (max-width: 600px) {
+    .article-container h1 {
+        font-size: 2rem;
+    }
+    .article h2{
+        font-size: 1.5rem;
+    }
+
+  }

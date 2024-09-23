@@ -1,11 +1,12 @@
 .navbar-container {
-    margin-top: 3rem;
+    margin-top: 3vh;
     color: white;
-    font-size: 30px;
+    font-size: 4vh;
     display: flex; 
     justify-content: space-between;
     align-items: center; 
     overflow: hidden;
+    width: 90vw;
   }
   
     ul {
@@ -18,13 +19,13 @@
   }
   
   .inside-navbar {
-   margin-left: 60rem; 
+   margin-left: 45vw; 
   }
   
   .inside-navbar li {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
     display: inline;
-    margin: 0 2rem;
+    margin: 0 5vh;
   }
   .inside-navbar li:hover {
     color: #a3a3a3;
@@ -36,5 +37,15 @@
 .nav-name {
     text-decoration: none;
     color: white;
-    margin-left: 15rem;
+    margin-left: 10vw;
   }
+@media screen and (max-width: 600px) {
+    .navbar-container {
+      width: 10vw;
+      height: 15vh;
+    }
+    .inside-navbar {
+      margin-left: 0vh;
+    }
+  
+}
