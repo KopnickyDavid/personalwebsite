@@ -1,4 +1,4 @@
-import React from 'react';
+import {React,useEffect} from 'react';
 import './App.css';
 import projectlist from '../../data/projects.json';
 import me from '../../pictures/me.jpg';
@@ -6,9 +6,10 @@ import { IconContext } from "react-icons";
 import { FaGithub } from 'react-icons/fa';
 import main from '../../pictures/main.png';
 import Skills from '../../components/skills/skills.jsx';
+import ArticlesPage from '../articles/articlepage.jsx';
+
 
 function App() {
-
 
   const list = projectlist.map((data, index) => (
     <div className='project' key={index}>
@@ -40,6 +41,7 @@ function App() {
 
       </div>
       <Skills/>  
+      <ArticlesPage/>
       <div className='projects' id='projects'>
         <h1>My Projects</h1>
         <div className='project-container'>
