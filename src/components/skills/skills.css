@@ -47,20 +47,23 @@
     font-size: 1rem;
     color: rgb(175, 174, 174);
     text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 @media screen and (max-width: 600px) {
 .skill {
     width: 25vw;
 }
 .skill img {
-    height: 10%;
+    height: 10vw;
 
 }
 .skill h2 {
-    font-size: 1.5rem;
+    font-size: 4vw;
 }
 .skill p {
-    font-size: 0.7rem;
+    margin-top: 0.5vh;
+    font-size: 1.2vh;
 }
     
   }
