@@ -27,8 +27,8 @@
     height: 20rem;
     border-radius: 2px;
     border: 2px solid rgb(43, 43, 43);
-    overflow: hidden;
-
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .skill img {
     height: 20%;
@@ -47,15 +47,13 @@
     font-size: 1rem;
     color: rgb(175, 174, 174);
     text-align: center;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 @media screen and (max-width: 600px) {
 .skill {
     width: 25vw;
 }
 .skill img {
-    height: 10vw;
+    height: 8vw;
 
 }
 .skill h2 {
